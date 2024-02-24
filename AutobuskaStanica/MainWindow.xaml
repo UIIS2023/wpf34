@@ -1,0 +1,30 @@
+﻿<Window x:Class="AutobuskaStanica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutobuskaStanica"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="dataGridCentralni" HorizontalAlignment="Center" VerticalAlignment="Center" Height="auto" Width="auto" IsReadOnly="True"
+              AlternatingRowBackground="Aqua" CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single"/>
+        <StackPanel HorizontalAlignment="Center" Height="30"  VerticalAlignment="Top" Width="auto" Orientation="Horizontal">
+            <Button x:Name="btnAutobus" Content="Autobus" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnAutobus_Click"/>
+            <Button x:Name="btnKarta" Content="Karta" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnKarta_Click"/>
+            <Button x:Name="btnParking" Content="Parking" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnParking_Click"/>
+            <Button x:Name="btnPolazak" Content="Polazak" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnPolazak_Click"/>
+            <Button x:Name="btnStatus" Content="Status" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnStatus_Click"/>
+            <Button x:Name="btnTipKarte" Content="Tip Karte" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnTipKarte_Click"/>
+            <Button x:Name="btnKupac" Content="Kupac" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnKupac_Click"/>
+            <Button x:Name="btnKorisnik" Content="Korisnik" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnKorisnik_Click"/>        
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" Height="30"  VerticalAlignment="Bottom" Width="360" Orientation="Horizontal">
+            <Button x:Name="btnDodaj" Content="Dodaj" Width="120" Click="btnDodaj_Click"/>
+            <Button x:Name="btnIzmeni" Content="Izmeni" Width="120" Click="btnIzmeni_Click_1"/>
+            <Button x:Name="btnObrisi" Content="Obriši" Width="120" Click="btnObrisi_Click"/>
+        </StackPanel>
+    </Grid>
+
+</Window>

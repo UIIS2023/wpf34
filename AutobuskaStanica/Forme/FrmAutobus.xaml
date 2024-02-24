@@ -1,0 +1,24 @@
+﻿<Window x:Class="AutobuskaStanica.Forme.FrmAutobus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutobuskaStanica.Forme"
+        mc:Ignorable="d"
+        Title="FrmAutobus" Height="450" Width="338">
+    <Grid>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="28,331,0,0" VerticalAlignment="Top" Width="75" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="203,331,0,0" VerticalAlignment="Top" Width="75" Click="btnOtkazi_Click"/>
+        <Label Content="Naziv kompanije:" HorizontalAlignment="Left" Margin="47,52,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tip autobusa:" HorizontalAlignment="Left" Margin="47,98,0,0" VerticalAlignment="Top"/>
+        <Label Content="Putanja autobusa:" HorizontalAlignment="Left" Margin="47,146,0,0" VerticalAlignment="Top"/>
+        <Label Content="Parking:" HorizontalAlignment="Left" Margin="47,191,0,0" VerticalAlignment="Top"/>
+        <Label Content="Polazak:" HorizontalAlignment="Left" Margin="47,242,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNaziv" HorizontalAlignment="Left" Margin="180,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtTip" HorizontalAlignment="Left" Margin="180,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPutanja" HorizontalAlignment="Left" Margin="180,146,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbParking" HorizontalAlignment="Left" Margin="180,193,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="parkingID" DisplayMemberPath="lokacija"/>
+        <ComboBox x:Name="cbPolazak" HorizontalAlignment="Left" Margin="180,252,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="polazakID" DisplayMemberPath="datum"/>
+
+    </Grid>
+</Window>
